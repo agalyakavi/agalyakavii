@@ -1,6 +1,6 @@
 package beginner;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class Heighestarray {
@@ -11,9 +11,13 @@ public class Heighestarray {
 		for(int i=0;i<n;i++){
 			a[i]=read.nextInt();
 		}
-		Arrays.sort(a);
-		System.out.println(a[0]);
-		System.out.println(a[n-1]);
+		int sum=0;
+		int avg=0;
+		for(int i=0;i<n;i++){
+			sum+=a[i];
+		}
+		avg=sum/n;
+		System.out.println(avg);
 	}
 
 }
